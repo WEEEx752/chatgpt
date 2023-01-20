@@ -63,7 +63,7 @@ export class ChatGPTPool {
     this.conversationsPool.delete(talkid);
   }
   async startPools() {
-    const chatGPTPools = [];
+    const chatGPTPools = ["3512651724@qq.com"];
     for (const account of config.chatGPTAccountPool) {
       const chatGpt = new ChatGPTAPIBrowser({
         ...account,
